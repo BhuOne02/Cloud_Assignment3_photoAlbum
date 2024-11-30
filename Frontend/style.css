@@ -1,0 +1,152 @@
+/* Main background styling */
+.mainmain {
+  background-color: lightblue;
+}
+
+/* Main section styling */
+.mainsection {
+  background: no-repeat left/cover url(search\ images.jpeg);
+  width: 800px;
+  height: 350px;
+  margin: 100px auto; /* Center the main section */
+  border-radius: 30px;
+  box-shadow: 1px 10px 8px 1px #dcdcdc;
+  position: relative; /* Added for better positioning of child */
+}
+
+/* Child element styling */
+.child {
+  position: absolute;
+  top: 35px;
+  left: 115px;
+}
+
+/* Search bar styling */
+.bar {
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 575px;
+  border: 1px solid #dcdcdc;
+  background-color: floralwhite;
+}
+
+.bar:hover {
+  box-shadow: 1px 10px 8px 1px #dcdcdc;
+}
+
+.bar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
+
+.searchbar {
+  background-color: floralwhite;
+  height: 45px;
+  border: darkblue;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Header styling */
+header.page-header {
+  display: flex;
+  border-radius: 30px;
+  height: 120px;
+  min-width: 100px;
+  align-items: center;
+  color: #fff;
+  text-shadow: #000 0 0 2em;
+  margin: 20px;
+}
+
+header.page-header > h1 {
+  font: bold calc(1em + 2 * (70vw - 120px) / 50) 'Arial';
+  margin: 20%;
+}
+
+.voice {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+/* Updated buttons styling to align items horizontally */
+.buttons {
+  border-radius: 25px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button styling */
+.buttons .button {
+  background-color: floralwhite;
+  border: none;
+  color: #707070;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.buttons .button:hover {
+  border: 1px solid #c8c8c8;
+  color: darkcyan;
+}
+
+.buttons .button:focus {
+  border: 1px solid #4885ed;
+}
+
+/* Style for the Custom Labels Input Field */
+#customLabels {
+  margin: 5px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Adjust input field focus styling */
+#customLabels:focus {
+  border-color: #4885ed;
+}
+
+/* Container styling for displaying images */
+.container {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+  margin: 0 auto; /* Center the container */
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover their grid area */
+  border-radius: 10px; /* Optional: Add rounded corners to images */
+}
+
+/* Grid classes for image sizes */
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}

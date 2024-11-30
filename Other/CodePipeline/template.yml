@@ -1,0 +1,25 @@
+Transform: 'AWS::Serverless-2016-10-31'
+Description: CloudFormation template for backend Lambda functions with OpenSearch and S3 integration.
+
+Resources:
+  ### Lambda Function: Process Image and Index Metadata ###
+  ProcessImageLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Timeout: 60
+      CodeUri: ./
+
+  ### Lambda Function: Search Image Metadata ###
+  SearchImageLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Timeout: 60
+      CodeUri: ./
+
+
